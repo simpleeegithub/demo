@@ -1,0 +1,32 @@
+(pc-workspace to git to github to jenking server to test to deploying production )
+git=local repository or system 
+repository = folder ,space 
+#initialize a local git repository
+ git init
+#create a local copy of a remote repository
+ git clone ssh://git@github.com/[username]/[repository-name].git 
+#add a file to the staging area
+ git add [file-name.txt]
+#add all new and changed file to the staging area 
+ git add -a
+#commit changes 
+git commit -m "[commit message]"
+#remove a file (folder)
+ git rm -r [file-name.txt] or [folder]
+#create a new branch 
+ git branch [branch name]
+#delete a branch 
+ git branch -d [branch name]
+#merge a branch into the active branch
+ git merge [branch name]
+#merge a branch into a target branch
+ git merge [source name] [target branch]
+#push a branch to your remote repository  
+ git push origin [branch name]
+#push changes to a remote repository 
+ git push 
+#pull changes from remote repository
+ git pull origin [branch name]
+#add a remote repository
+ git remote add origin ssh://git@github.com/[username]/[repository-name].git 
+
